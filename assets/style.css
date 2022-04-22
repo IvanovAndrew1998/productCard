@@ -1,0 +1,78 @@
+body {
+    margin: 5%;
+}
+.article {
+    margin: 10px;
+    border: solid 3px lightblue;
+    padding: 10px;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.productCard {
+
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+
+    padding: 10px;
+    margin: 5px 5px;
+
+    -webkit-box-shadow: 12px 14px 15px 1px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 12px 14px 15px 1px rgba(34, 60, 80, 0.2);
+    box-shadow: 12px 14px 15px 1px rgba(34, 60, 80, 0.2);
+
+    border: solid 1px lightgrey;
+}
+.productCard.active .openedCard {
+    width: 300px;
+
+}
+.closedCard {
+    width: 300px;
+    position: relative;
+    cursor: pointer;
+}
+.closedCard::before {
+    content: '>';
+    position: absolute;
+    top: 95%;
+    right: 10%;
+    transform: translateX(-50%);
+
+}
+.productImage img {
+    width: 100%;
+
+}
+.thePrice {
+    display: flex;
+    justify-content:space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.actualPrice {
+    font-weight: bolder;
+}
+.discountPrice {
+    text-decoration: line-through;
+
+}
+.bottomButtons {
+    display: flex;
+    justify-content:space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.openedCard {
+    position: relative;
+
+    width: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-x: auto;
+}
+.productDescription {
+
+}
