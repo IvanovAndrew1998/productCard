@@ -67,7 +67,6 @@ body {
 }
 .openedCard {
     position: relative;
-
     width: 0;
     overflow: hidden;
     transition: 0.5s;
